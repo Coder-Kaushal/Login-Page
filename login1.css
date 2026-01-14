@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html{
+    width: 100vw;
+    background-image: url(photo3.webp);
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+h1{
+    font-size: 2.5rem;
+    color: rgb(250, 5, 5);
+    align-self: center;
+    
+}
+#drop{
+    /* height: 1.5vw; */
+    font-size: 1rem;
+    border-radius: .5rem;
+    color: rgb(22, 151, 132);
+    background-color: transparent;
+    border-style: none;
+    align-self: center;
+}
+
+#drop:hover{
+    box-shadow: .1rem .1rem .1rem  rgb(166, 158, 158);
+}
+.box{
+    width: 100%;
+    height: 10%;
+    font-size: 1.3rem;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    box-shadow: .1rem .1rem .1rem  rgb(166, 158, 158);
+}
+
+input{
+    width: 60%;
+    height: 50%;
+    border-width: 0;
+    border-radius: .54rem;
+    font-size: 1.1rem;
+    border-style: none;
+    background-color: transparent;
+    transition: transform 0.4s ease;
+}
+input:hover{
+    transform: scale(1.1);
+    box-shadow: .1rem .1rem .1rem rgb(166, 158, 158), -.09rem -.09rem .09rem rgb(166, 158, 158);
+}
+#sub{
+    width: 25%;
+    height: 40%;
+    background-color: green;
+    box-shadow: .1rem .1rem .1rem rgb(58, 57, 57);
+    border-style: none;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.box5{
+    width: 100%;
+    height: 15%;
+    font-size: .9rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10%;
+    align-items: center;
+    box-shadow: .1rem .1rem .1rem  rgb(166, 158, 158);
+}
+#sub a{
+    text-decoration: none;
+    color: white;
+}
+
+.sign a, .for a{
+    text-decoration: none;
+    color: rgb(6, 252, 215);
+    border-radius: .5rem;
+    transition: transform 0.4s ease;
+}
+.sign a:hover,.for a:hover{
+    transform: scale(1.1);
+    box-shadow: .1rem .1rem .1rem  rgb(166, 158, 158), -.09rem -.09rem .09rem rgb(166, 158, 158);
+}
+.modes{
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 650px){
+    body, html{
+    width: 100%;
+    background-image: url(photo3.webp);
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    height: 97vh;
+    display: flex;
+
+    justify-content: center;
+    
+}
+.boxes{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+h1{
+    font-size: 3rem;
+    color: rgb(250, 5, 5);
+    align-self: center;
+    
+}
+#drop{
+    font-size: 3vw;
+    border-radius: .5rem;
+    color: rgb(22, 151, 132);
+    background-color: transparent;
+    border-style: none;
+    align-self: center;
+}
+
+#drop:hover{
+    box-shadow: .1rem .1rem .1rem  rgb(166, 158, 158);
+}
+.box{
+    width: 90%;
+    height: 10%;
+    font-size: 1.2rem;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    box-shadow: .1rem .1rem .1rem  rgb(166, 158, 158);
+}
+
+input{
+    width: 55%;
+    height: 60%;
+    border-width: 0;
+    border-radius: .54rem;
+    font-size: 1rem;
+    border-style: none;
+    background-color: transparent;
+    transition: transform 0.4s ease;
+}
+input:hover{
+    transform: scale(1.12);
+    box-shadow: .1rem .1rem .1rem rgb(166, 158, 158), -.09rem -.09rem .09rem rgb(166, 158, 158);
+}
+#sub{
+    width: 25%;
+    height: 40%;
+    background-color: green;
+    box-shadow: .1rem .1rem .1rem rgb(58, 57, 57);
+    border-style: none;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.box5{
+    width: 100%;
+    height: 15%;
+    font-size: .9rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    align-items: center;
+    box-shadow: .1rem .1rem .1rem  rgb(166, 158, 158);
+}
+#sub a{
+    text-decoration: none;
+    color: white;
+}
+
+.sign a, .for a{
+    text-decoration: none;
+    color: rgb(6, 252, 215);
+    border-radius: .5rem;
+    transition: transform 0.4s ease;
+}
+.sign a:hover,.for a:hover{
+    transform: scale(1.1);
+    box-shadow: .1rem .1rem .1rem  rgb(166, 158, 158), -.09rem -.09rem .09rem rgb(166, 158, 158);
+}
+.modes{
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+}
