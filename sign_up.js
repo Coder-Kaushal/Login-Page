@@ -21,28 +21,28 @@ let boxes = document.querySelectorAll(".box");
 //     }
     
 // })
-
+const name = document.querySelector("#name");
+const phone = document.querySelector("#mobNo");
+const mail = document.querySelector("#mail");
+const age = document.querySelector("#age");
+const pass = document.querySelector("#pass");
 
 
 document.querySelector("#sub").addEventListener("click", ()=>{
-    let name = document.querySelector("#name").value.trim();
-    let phone = document.querySelector("#mobNo").value.trim();
-    let mail = document.querySelector("#mail").value.trim();
-    let age = document.querySelector("#age").value.trim();
-    let pass = document.querySelector("#pass").value.trim();
-
-    if(name === "" || phone === "" ||mail === "" || age === "" || pass === "" ){
-        alert("fill all credentials !");
+    if(name.value.trim() === "" || phone.value.trim() === "" || mail.value.trim() === "" || age.value.trim() === "" || pass.value.trim() === "" ){
+        alert("fill all credentials !")
         return;
     }
-    else{
-        localStorage.setItem("name",name);
-        localStorage.setItem("phone",phone);
-        localStorage.setItem("mail",mail);
-        localStorage.setItem("age",age);
-        localStorage.setItem("pass",pass);
-
-        alert("Thankyou! details are submitted. Now you can login.");
+    const data = {
+        Name : name.value.trim(),
+        Phone : phone.value.trim(),
+        Mail : mail.value.trim(),
+        Age : age.value.trim(),
+        Pass : pass.value.trim()
     }
+    localStorage.setItem("data", JSON.stringify(data));
+        
+    alert("Thankyou! details are submitted. Now you can login.");
+    
 });
 

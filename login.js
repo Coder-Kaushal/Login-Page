@@ -26,19 +26,26 @@ let boxes = document.querySelectorAll(".box");
 
 
 document.querySelector("#sub").addEventListener("click", ()=>{
-    let name = document.querySelector("#name").value.trim();
-    let phone = document.querySelector("#mobNo").value.trim();
-    let pass = document.querySelector("#pass").value.trim()
+    const name = document.querySelector("#name").value.trim();
+    const phone = document.querySelector("#mobNo").value.trim();
+    const pass = document.querySelector("#pass").value.trim();
 
-    let sname = localStorage.getItem("name");
-    let sphone = localStorage.getItem("phone");
-    let spass = localStorage.getItem("pass");
+
+    const data = JSON.parse(localStorage.getItem("data")) || {
+
+        Name : null,
+        Phone : null,
+        Mail : null,
+        Age : null,
+        Pass : null
+    };
+
     if(name === "" || phone === "" || pass === "" ){
         alert("fill all credentials !")
         return;
     }
-    if(name === sname && phone === sphone && pass === spass){
-        alert(`Welcome ${sname} you are logged in.`);
+    if(name === data.Name && phone === data.Phone && pass === data.Pass){
+        alert(`Welcome ${data.Name} you are logged in.`);
     }else{
         alert("Wrong Credentials. if you are new then sign up fist.");
     }
